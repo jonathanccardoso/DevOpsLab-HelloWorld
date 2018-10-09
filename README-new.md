@@ -160,7 +160,7 @@ no 'github'
  - 'status do deploy' status image - markdown - e copiar texto abaixo
  - para o 'travis' funcionar tem que ter o arquivo travis.yml (para configurações dos processos e testes) e o test.py
  - no 'travis' o projeto aparece um build dizendo se passou ou nao a alteração
-#deploy e #operate
+#deploy e operate
 6 - usar o heroku
  - criar uma app no heroku e copiar a api key da sua conta
  - no projeto em settings criar uma variavel 'HEROKU_API_KEY' e colar a API_KEY
