@@ -1,38 +1,53 @@
 # DevOps Essentials
+
 Apresentations of general knowledge about devops.
 
 ## O que é
+
 Combinações de praticas e ferramentas que aumentam a capacidade de uma empresa para distribuir aplicativos.
 Alinhamentos dos times de desenvolvimento e operação englobando processos, ferramentas e responsabilidade.
 
 DevOps -> desenvolvimento + operações
 (melhores praticas p/ colaboração e comunicação)
 
-Começou a partir do 'manifesto agile', conectando melhoradas e constantes aos clientes
+Começou a partir do 'manifesto agile', conectando melhoradas e constantes aos clientes!
 
 ## Pilares
-cultura - colaboração
-automatização - ferramentas de automatização e pipelines automáticas
-medição - monitoração, metricas de todo o ciclo
-compartilhamento - feedback, compartilhar responsabilidades
+
+- Cultura
+Colaboração entre as areas
+- Automatização
+Ferramentas de automatização e pipelines automáticas
+- Medição
+Monitoração, metricas de todo o ciclo (melhorias)
+- Compartilhamento 
+Feedback, compartilhar responsabilidades
 
 ## Caracteristicas
--dev
-desenvolvimento agil
-diminuição na complexidade do sorftware
-entrega continua
--ops
-gerencia de configuração
-monitoração e coleta de metricas
-ambiente automatizado
+
+### Dev
+
+- Desenvolvimento agil
+- Diminuição na complexidade do sorftware
+- Entrega continua
+- Aumentar valor de negócio
+
+### Ops
+
+- Gerencia de configuração
+- Monitoração e coleta de metricas
+- Ambiente automatizado
+- Estabilidade do ambiente
 
 ## Beneficios
-melhor comunicação e colaboração entre as areas
-melhor qualidade e frequencia de entregas
-maior estabilidade e melhor desemprenho
-aumento do valor do negócio
+
+- Melhor comunicação e colaboração entre as areas
+- Melhor qualidade e frequencia de entregas
+- Maior estabilidade e melhor desemprenho
+- Aumento do valor do negócio
 
 ## Metodologias Ageis
+
 - scrum -> gestão de projetos, projetos fragmentados em sprints,
 o mais importante é feito primeiro, prioridades(backlogs)
 - kanban -> atividades do dia e status de cada area
@@ -42,7 +57,7 @@ Deploy, controle, monitoração, gerência de configuração
 e orquestração
 
 (2)
-## terminologias
+## Terminologias
 -ops
 infraestrutura agil e como codigo
 gerencia de configuração
@@ -54,20 +69,21 @@ integração, entrega continua
 implantação continua
 
 ## PipeLine de desenvolvimento
--integração continua
-o codigo é diretamente testado (de forma automatizada)
+
+- Integração continua
+O codigo é diretamente testado (de forma automatizada)
 antes de por em produção.
--entrega continua
+- Entrega continua
 garantir versiões novas e ou atualizadas p/ entregar.
--implantação continua
+- Implantação continua
 depois do codigo "pronto" e feitos os testes o
 codigo (a funcionabilidade) entra em produção.
-
-- foco do pipeline de desenvolvimento
+- Foco do pipeline de desenvolvimento
 entrega da relesase de Software confiável para entrar
 em produção
 
-## pipeline DevOps = "um pipeline de pipelines"
+## Pipeline DevOps = "um pipeline de pipelines"
+
 (abrange muito mais coisa - "a união")
 - foco na função das equipes
 - automatização de teste para testes e segurança
@@ -95,6 +111,7 @@ há muitas certficações no mercado, principais:
 
 (4)
 ## Relação do DevOps com o open source
+
 - devops nao é ferramenta
 - ferramenta é as automações feitas a partir dessa
 filosofia
@@ -105,7 +122,8 @@ filosofia
 - usam ferramentas de container
 docker, amazon ecs/eks, kubernetes
 
-## principais ferramentas DevOps
+## Principais ferramentas DevOps
+
 = ciclo devops (pipeline devops) - tools (free e comunicáveis):
 (ok) - usados pelo 4linux, colocam dentro dos servidores essas plataformas
 
@@ -145,27 +163,38 @@ moitoração (monitor)
 -ciclo devops
 planejamento, codigo, construção,testes,deploy, operação, moitoração
 
-#planning collasborate
+# Planning collaborate
+
 1 - criar conta no codeanywhere, travis e no heroku
 2 - no github em project podemos criar um planejamento kanban
  - github/4linux/devops-lab-hello-world
-#code
+
+# Code
+
 3 - criando um repositorio no 'codeanywhere' e publicando
 no 'github'
-#build
+
+# Build
+
 4 - 'travis' configurar para aplicação e tests (com a biblioteca uniteTeste)
-#test
+
+# Test
+
 5 - 'travis' - sync na conta github e add projeto
  - habilitar p/ a cada fez q tiver alteração ele fazer um deploy
  - 'status do deploy' status image - markdown - e copiar texto abaixo
  - para o 'travis' funcionar tem que ter o arquivo travis.yml (para configurações dos processos e testes) e o test.py
  - no 'travis' o projeto aparece um build dizendo se passou ou nao a alteração
-#deploy e operate
+
+# Deploy e operate
+
 6 - usar o heroku
  - criar uma app no heroku e copiar a api key da sua conta
  - no projeto em settings criar uma variavel 'HEROKU_API_KEY' e colar a API_KEY
  - o mesmo nome da variavel exisstente em .travis.yml
  - e colocando o nome do proejto no heroku em .travis.yml em 'deploy' - 'app'
-#monitor
+
+# Monitor
+
 7 - no heroku faz as monitorações que sao as 'metricas' em app no heroku
  - mostrando tempo de resposta da pagina
